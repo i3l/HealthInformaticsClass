@@ -1,0 +1,1841 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
+<!--Copyright EXACTDATA, LLC. ALL RIGHTS RESERVED.-->
+<!--This file contains synthetic data depicting a fictional health summary. Any resemblance to a real person is coincidental.-->
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" classCode="DOCCLIN" moodCode="EVN" xmlns="urn:hl7-org:v3">
+    <realmCode code="US" />
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+    <templateId root="2.16.840.1.113883.10.20.22.1.1" />
+    <templateId root="2.16.840.1.113883.10.20.22.1.2" />
+    <id root="58946497-180E-4799-8BBB-8492D9383C34" />
+    <code code="34133-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summarization of Episode Note" />
+    <title mediaType="text/plain" representation="TXT">Continuity of Care Document</title>
+    <effectiveTime value="201001131400-0500" />
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" displayName="normal" />
+    <languageCode code="en-US" />
+    <recordTarget typeCode="RCT" contextControlCode="OP">
+        <patientRole classCode="PAT">
+            <id root="2.16.840.1.113883.4.1" extension="000-19-9767" />
+            <id root="2.16.840.1.113883.3.441.1.50.300011.51" extension="000199767-01" />
+            <addr use="HP">
+                <streetAddressLine partType="SAL">7367 Platsek Drive</streetAddressLine>
+                <city partType="CTY">Atlanta</city>
+                <state partType="STA">GA</state>
+                <postalCode partType="ZIP">30314</postalCode>
+                <country partType="CNT">US</country>
+            </addr>
+            <telecom value="tel:+1-712-294-0289" use="HP" />
+            <patient classCode="PSN" determinerCode="INSTANCE">
+                <name use="L">
+                    <given partType="GIV">Alma</given>
+                    <family partType="FAM">Deleon</family>
+                </name>
+                <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" displayName="Female" />
+                <birthTime value="19741209" />
+                <maritalStatusCode code="L" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatus" displayName="Legally Separated" />
+                <raceCode code="2106-3" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race and Ethnicity - CDC" displayName="White" />
+                <languageCommunication>
+                    <languageCode code="eng" />
+                    <modeCode code="ESP" codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode" displayName="Expressed spoken" />
+                </languageCommunication>
+            </patient>
+        </patientRole>
+    </recordTarget>
+    <author typeCode="AUT" contextControlCode="OP">
+        <time value="201001131400-0500" />
+        <assignedAuthor classCode="ASSIGNED">
+            <id root="2.16.840.1.113883.4.6" extension="1789029723" />
+            <code code="200000000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" displayName="Allopathic &amp; Osteopathic Physicians" />
+            <addr use="WP">
+                <streetAddressLine partType="SAL">1079 Vail Drive</streetAddressLine>
+                <city partType="CTY">Fairburn</city>
+                <state partType="STA">GA</state>
+                <postalCode partType="ZIP">30213</postalCode>
+                <country partType="CNT">US</country>
+            </addr>
+            <telecom value="tel:+1-616-359-1654" use="WP" />
+            <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                <name use="L">
+                    <given partType="GIV">Nicholas</given>
+                    <family partType="FAM">Roach</family>
+                    <suffix partType="SFX">MD</suffix>
+                </name>
+            </assignedPerson>
+        </assignedAuthor>
+    </author>
+    <custodian typeCode="CST">
+        <assignedCustodian classCode="ASSIGNED">
+            <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+                <id root="2.16.840.1.113883.4.450" extension="369259082" />
+                <name>ExactData Medical Health System</name>
+                <telecom value="tel:+1-616-359-1654" use="WP" />
+                <addr use="WP">
+                    <streetAddressLine partType="SAL">1079 Vail Drive</streetAddressLine>
+                    <city partType="CTY">Fairburn</city>
+                    <state partType="STA">GA</state>
+                    <postalCode partType="ZIP">30213</postalCode>
+                    <country partType="CNT">US</country>
+                </addr>
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <participant typeCode="IND" contextControlCode="OP">
+        <time value="201001131400-0500" />
+        <associatedEntity classCode="ECON">
+            <code code="FRND" codeSystem="2.16.840.1.113883.5.110" codeSystemName="RoleClass" displayName="unrelated friend" />
+            <telecom value="tel:1-914-754-2242" />
+            <associatedPerson classCode="PSN" determinerCode="INSTANCE">
+                <name use="L">
+                    <given partType="GIV">Barrett</given>
+                    <family partType="FAM">Hancock</family>
+                </name>
+            </associatedPerson>
+        </associatedEntity>
+    </participant>
+    <documentationOf typeCode="DOC">
+        <serviceEvent classCode="PCPR" moodCode="EVN">
+            <effectiveTime>
+                <low value="201001131400-0500" />
+                <high value="201001131400-0500" />
+            </effectiveTime>
+            <performer typeCode="PRF">
+                <functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88" codeSystemName="ParticipationFunction" displayName="Primary Care Physician" />
+                <time>
+                    <low value="201001131400-0500" />
+                    <high value="201001131400-0500" />
+                </time>
+                <assignedEntity classCode="ASSIGNED">
+                    <id root="2.16.840.1.113883.4.6" extension="1789029723" />
+                    <code code="200000000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" displayName="Allopathic &amp; Osteopathic Physicians" />
+                    <addr use="WP">
+                        <streetAddressLine partType="SAL">1079 Vail Drive</streetAddressLine>
+                        <city partType="CTY">Fairburn</city>
+                        <state partType="STA">GA</state>
+                        <postalCode partType="ZIP">30213</postalCode>
+                        <country partType="CNT">US</country>
+                    </addr>
+                    <telecom value="tel:+30213" use="WP" />
+                    <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                        <name use="L">
+                            <given partType="GIV">Nicholas</given>
+                            <family partType="FAM">Roach</family>
+                            <suffix partType="SFX">MD</suffix>
+                        </name>
+                    </assignedPerson>
+                </assignedEntity>
+            </performer>
+        </serviceEvent>
+    </documentationOf>
+    <componentOf typeCode="COMP">
+        <encompassingEncounter classCode="ENC" moodCode="EVN">
+            <id root="F19D1D04-A7F7-42EB-8F93-AA8F65AF9427" />
+            <effectiveTime>
+                <low value="201001131400-0500" />
+                <high value="201001131400-0500" />
+            </effectiveTime>
+            <responsibleParty typeCode="RESP">
+                <assignedEntity classCode="ASSIGNED">
+                    <id root="2.16.840.1.113883.4.6" extension="1789029723" />
+                    <code code="200000000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" displayName="Allopathic &amp; Osteopathic Physicians" />
+                    <addr use="WP">
+                        <streetAddressLine partType="SAL">1079 Vail Drive</streetAddressLine>
+                        <city partType="CTY">Fairburn</city>
+                        <state partType="STA">GA</state>
+                        <postalCode partType="ZIP">30213</postalCode>
+                        <country partType="CNT">US</country>
+                    </addr>
+                    <telecom value="tel:+30213" use="WP" />
+                    <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                        <name use="L">
+                            <given partType="GIV">Nicholas</given>
+                            <family partType="FAM">Roach</family>
+                            <suffix partType="SFX">MD</suffix>
+                        </name>
+                    </assignedPerson>
+                    <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                        <id root="2.16.840.1.113883.4.450" />
+                        <name use="L">ExactData Medical Health System</name>
+                    </representedOrganization>
+                </assignedEntity>
+            </responsibleParty>
+            <location typeCode="LOC">
+                <healthCareFacility>
+                    <id nullFlavor="UNK" />
+                    <code code="FMC" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" displayName="Family medicine clinic" />
+                    <location classCode="PLC" determinerCode="INSTANCE">
+                        <name use="L">Riverside Medical Associates</name>
+                        <addr use="WP">
+                            <streetAddressLine partType="SAL">1079 Vail Drive</streetAddressLine>
+                            <city partType="CTY">Fairburn</city>
+                            <state partType="STA">GA</state>
+                            <postalCode partType="ZIP">30213</postalCode>
+                            <country partType="CNT">US</country>
+                        </addr>
+                    </location>
+                    <serviceProviderOrganization classCode="ORG" determinerCode="INSTANCE">
+                        <id root="2.16.840.1.113883.4.450" />
+                        <name use="L">ExactData Medical Health System</name>
+                        <telecom value="tel:+1-616-359-1654" use="WP" />
+                        <addr use="WP">
+                            <streetAddressLine partType="SAL">1079 Vail Drive</streetAddressLine>
+                            <city partType="CTY">Fairburn</city>
+                            <state partType="STA">GA</state>
+                            <postalCode partType="ZIP">30213</postalCode>
+                            <country partType="CNT">US</country>
+                        </addr>
+                        <standardIndustryClassCode code="621111" codeSystem="2.16.840.1.113883.1.11.19298" codeSystemName="NAICS" displayName="Offices of Physicians" />
+                    </serviceProviderOrganization>
+                </healthCareFacility>
+            </location>
+        </encompassingEncounter>
+    </componentOf>
+    <component typeCode="COMP" contextConductionInd="true">
+        <structuredBody classCode="DOCBODY" moodCode="EVN">
+            <component typeCode="COMP" contextConductionInd="true">
+                <section classCode="DOCSECT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.2.21" />
+                    <code code="42348-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advance Directives" />
+                    <title mediaType="text/plain" representation="TXT">ADVANCE DIRECTIVES</title>
+                    <text mediaType="text/x-hl7-text+xml" language="en-US">
+                        <table width="100%" border="1">
+                            <thead>
+                                <tr>
+                                    <th>Directive</th>
+                                    <th>Description</th>
+                                    <th>Custodian</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <content ID="AdvanceDirective-1">IV Fluid and Support</content>
+                                    </td>
+                                    <td>
+                                        <content>Do not allow IV Fluid and Support</content>
+                                    </td>
+                                    <td>
+                                        <content>Riverside Medical Associates</content>
+                                    </td>
+                                    <td>
+                                        <content>Supported By Healthcare Will</content>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content ID="AdvanceDirective-2">Intubation</content>
+                                    </td>
+                                    <td>
+                                        <content>Allow Intubation</content>
+                                    </td>
+                                    <td>
+                                        <content>Riverside Medical Associates</content>
+                                    </td>
+                                    <td>
+                                        <content>Supported By Durable Power of Attorney for Healthcare</content>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content ID="AdvanceDirective-3">Resuscitation</content>
+                                    </td>
+                                    <td>
+                                        <content>Do not allow Resuscitation</content>
+                                    </td>
+                                    <td>
+                                        <content>Riverside Medical Associates</content>
+                                    </td>
+                                    <td>
+                                        <content>Current and verified</content>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content ID="AdvanceDirective-4">CPR</content>
+                                    </td>
+                                    <td>
+                                        <content>Do not allow CPR</content>
+                                    </td>
+                                    <td>
+                                        <content>Riverside Medical Associates</content>
+                                    </td>
+                                    <td>
+                                        <content>Verified With Family Only</content>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content ID="AdvanceDirective-5">Antibiotics</content>
+                                    </td>
+                                    <td>
+                                        <content>Do not allow Antibiotics</content>
+                                    </td>
+                                    <td>
+                                        <content>Riverside Medical Associates</content>
+                                    </td>
+                                    <td>
+                                        <content>Supported By Durable Power of Attorney for Healthcare</content>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content ID="AdvanceDirective-6">Life Support</content>
+                                    </td>
+                                    <td>
+                                        <content>Allow Life Support</content>
+                                    </td>
+                                    <td>
+                                        <content>Riverside Medical Associates</content>
+                                    </td>
+                                    <td>
+                                        <content>Current and verified</content>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.48" />
+                            <id root="59965E11-FBBE-443B-8BA5-0A003DCA60DA" />
+                            <code code="225204009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="IV Fluid and Support" />
+                            <text representation="TXT">
+                                <reference value="#AdvanceDirective-1" />
+                            </text>
+                            <statusCode code="completed" />
+                            <effectiveTime>
+                                <low nullFlavor="UNK" />
+                                <high nullFlavor="NA" />
+                            </effectiveTime>
+                            <value xsi:type="CD" code="425394002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Do not IV Fluid and Support" />
+                            <participant typeCode="CST" contextControlCode="OP">
+                                <participantRole>
+                                    <addr use="WP">
+                                        <streetAddressLine partType="SAL">1079 Vail Drive</streetAddressLine>
+                                        <city partType="CTY">Fairburn</city>
+                                        <state partType="STA">GA</state>
+                                        <postalCode partType="ZIP">30213</postalCode>
+                                        <country partType="CNT">US</country>
+                                    </addr>
+                                    <telecom value="tel:+1-616-359-1654" use="WP" />
+                                    <playingEntity classCode="PSN" determinerCode="INSTANCE">
+                                        <name use="L">Dr.<given partType="GIV">Nicholas</given><family partType="FAM">Roach</family><suffix partType="SFX">MD</suffix></name>
+                                    </playingEntity>
+                                </participantRole>
+                            </participant>
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.48" />
+                            <id root="AC865255-54AB-49F3-86FC-3194081E9E01" />
+                            <code code="52765003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Intubation" />
+                            <text representation="TXT">
+                                <reference value="#AdvanceDirective-2" />
+                            </text>
+                            <statusCode code="completed" />
+                            <effectiveTime>
+                                <low nullFlavor="UNK" />
+                                <high nullFlavor="NA" />
+                            </effectiveTime>
+                            <value xsi:type="CD" code="425393008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Do Intubation" />
+                            <participant typeCode="CST" contextControlCode="OP">
+                                <participantRole>
+                                    <addr use="WP">
+                                        <streetAddressLine partType="SAL">1079 Vail Drive</streetAddressLine>
+                                        <city partType="CTY">Fairburn</city>
+                                        <state partType="STA">GA</state>
+                                        <postalCode partType="ZIP">30213</postalCode>
+                                        <country partType="CNT">US</country>
+                                    </addr>
+                                    <telecom value="tel:+1-616-359-1654" use="WP" />
+                                    <playingEntity classCode="PSN" determinerCode="INSTANCE">
+                                        <name use="L">Dr.<given partType="GIV">Nicholas</given><family partType="FAM">Roach</family><suffix partType="SFX">MD</suffix></name>
+                                    </playingEntity>
+                                </participantRole>
+                            </participant>
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.48" />
+                            <id root="C101C8DD-0679-4893-8702-A130F6451FA1" />
+                            <code code="304251008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Resuscitation" />
+                            <text representation="TXT">
+                                <reference value="#AdvanceDirective-3" />
+                            </text>
+                            <statusCode code="completed" />
+                            <effectiveTime>
+                                <low nullFlavor="UNK" />
+                                <high nullFlavor="NA" />
+                            </effectiveTime>
+                            <value xsi:type="CD" code="425392003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Do not Resuscitation" />
+                            <participant typeCode="CST" contextControlCode="OP">
+                                <participantRole>
+                                    <addr use="WP">
+                                        <streetAddressLine partType="SAL">1079 Vail Drive</streetAddressLine>
+                                        <city partType="CTY">Fairburn</city>
+                                        <state partType="STA">GA</state>
+                                        <postalCode partType="ZIP">30213</postalCode>
+                                        <country partType="CNT">US</country>
+                                    </addr>
+                                    <telecom value="tel:+1-616-359-1654" use="WP" />
+                                    <playingEntity classCode="PSN" determinerCode="INSTANCE">
+                                        <name use="L">Dr.<given partType="GIV">Nicholas</given><family partType="FAM">Roach</family><suffix partType="SFX">MD</suffix></name>
+                                    </playingEntity>
+                                </participantRole>
+                            </participant>
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.48" />
+                            <id root="733709BF-879B-467C-893C-BBE4AD332452" />
+                            <code code="89666000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="CPR" />
+                            <text representation="TXT">
+                                <reference value="#AdvanceDirective-4" />
+                            </text>
+                            <statusCode code="completed" />
+                            <effectiveTime>
+                                <low nullFlavor="UNK" />
+                                <high nullFlavor="NA" />
+                            </effectiveTime>
+                            <value xsi:type="CD" code="425396000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Do not CPR" />
+                            <participant typeCode="CST" contextControlCode="OP">
+                                <participantRole>
+                                    <addr use="WP">
+                                        <streetAddressLine partType="SAL">1079 Vail Drive</streetAddressLine>
+                                        <city partType="CTY">Fairburn</city>
+                                        <state partType="STA">GA</state>
+                                        <postalCode partType="ZIP">30213</postalCode>
+                                        <country partType="CNT">US</country>
+                                    </addr>
+                                    <telecom value="tel:+1-616-359-1654" use="WP" />
+                                    <playingEntity classCode="PSN" determinerCode="INSTANCE">
+                                        <name use="L">Dr.<given partType="GIV">Nicholas</given><family partType="FAM">Roach</family><suffix partType="SFX">MD</suffix></name>
+                                    </playingEntity>
+                                </participantRole>
+                            </participant>
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.48" />
+                            <id root="FB5B5D4B-DEDE-49F6-8C2B-7FD5E6ABFE8D" />
+                            <code code="281789004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Antibiotics" />
+                            <text representation="TXT">
+                                <reference value="#AdvanceDirective-5" />
+                            </text>
+                            <statusCode code="completed" />
+                            <effectiveTime>
+                                <low nullFlavor="UNK" />
+                                <high nullFlavor="NA" />
+                            </effectiveTime>
+                            <value xsi:type="CD" code="425393008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Do not Antibiotics" />
+                            <participant typeCode="CST" contextControlCode="OP">
+                                <participantRole>
+                                    <addr use="WP">
+                                        <streetAddressLine partType="SAL">1079 Vail Drive</streetAddressLine>
+                                        <city partType="CTY">Fairburn</city>
+                                        <state partType="STA">GA</state>
+                                        <postalCode partType="ZIP">30213</postalCode>
+                                        <country partType="CNT">US</country>
+                                    </addr>
+                                    <telecom value="tel:+1-616-359-1654" use="WP" />
+                                    <playingEntity classCode="PSN" determinerCode="INSTANCE">
+                                        <name use="L">Dr.<given partType="GIV">Nicholas</given><family partType="FAM">Roach</family><suffix partType="SFX">MD</suffix></name>
+                                    </playingEntity>
+                                </participantRole>
+                            </participant>
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.48" />
+                            <id root="5B3E2D44-D1AB-4B4F-82CB-A3200C5EAE07" />
+                            <code code="78823007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Life Support" />
+                            <text representation="TXT">
+                                <reference value="#AdvanceDirective-6" />
+                            </text>
+                            <statusCode code="completed" />
+                            <effectiveTime>
+                                <low nullFlavor="UNK" />
+                                <high nullFlavor="NA" />
+                            </effectiveTime>
+                            <value xsi:type="CD" code="425392003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Do Life Support" />
+                            <participant typeCode="CST" contextControlCode="OP">
+                                <participantRole>
+                                    <addr use="WP">
+                                        <streetAddressLine partType="SAL">1079 Vail Drive</streetAddressLine>
+                                        <city partType="CTY">Fairburn</city>
+                                        <state partType="STA">GA</state>
+                                        <postalCode partType="ZIP">30213</postalCode>
+                                        <country partType="CNT">US</country>
+                                    </addr>
+                                    <telecom value="tel:+1-616-359-1654" use="WP" />
+                                    <playingEntity classCode="PSN" determinerCode="INSTANCE">
+                                        <name use="L">Dr.<given partType="GIV">Nicholas</given><family partType="FAM">Roach</family><suffix partType="SFX">MD</suffix></name>
+                                    </playingEntity>
+                                </participantRole>
+                            </participant>
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+            <component typeCode="COMP" contextConductionInd="true">
+                <section classCode="DOCSECT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.2.6.1" />
+                    <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts" />
+                    <title mediaType="text/plain" representation="TXT">ALLERGIES</title>
+                    <text mediaType="text/x-hl7-text+xml" language="en-US">
+                        <table border="1" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Substance</th>
+                                    <th>Reaction</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4">
+                                        <content ID="Allergy-0">No known drug allergies</content>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <act classCode="ACT" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.30" />
+                            <id root="3360099B-1563-425B-8C85-C694059E63B3" />
+                            <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts" />
+                            <statusCode code="active" />
+                            <effectiveTime>
+                                <low nullFlavor="NI" />
+                                <high value="201001131400-0500" />
+                            </effectiveTime>
+                            <entryRelationship typeCode="SUBJ" inversionInd="true" contextConductionInd="true">
+                                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.7" />
+                                    <id root="7664B804-9AC2-434F-8D22-091E50089602" />
+                                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                                    <statusCode code="completed" />
+                                    <effectiveTime nullFlavor="NI" />
+                                    <value xsi:type="CD" code="416098002" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Drug allergy (disorder)" />
+                                    <participant typeCode="CSM" contextControlCode="OP">
+                                        <participantRole classCode="MANU">
+                                            <playingEntity classCode="MMAT" determinerCode="INSTANCE">
+                                                <code code="410942007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="drug or medication">
+                                                    <originalText representation="TXT">
+                                                        <reference value="#Allergy-0" />
+                                                    </originalText>
+                                                </code>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                </section>
+            </component>
+            <component typeCode="COMP" contextConductionInd="true">
+                <section classCode="DOCSECT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.2.15" />
+                    <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Family History" />
+                    <title mediaType="text/plain" representation="TXT">FAMILY HISTORY</title>
+                    <text mediaType="text/x-hl7-text+xml" language="en-US">
+                        <table width="100%" border="1">
+                            <thead>
+                                <tr>
+                                    <th>Relation</th>
+                                    <th>Diagnosis</th>
+                                    <th>Age At Onset</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <content ID="FamilyHistory-1">Sister</content>
+                                    </td>
+                                    <td>
+                                        <content>Ulcers</content>
+                                    </td>
+                                    <td>
+                                        <content>98</content>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content ID="FamilyHistory-2">Grandfather</content>
+                                    </td>
+                                    <td>
+                                        <content>Migraine Headaches</content>
+                                    </td>
+                                    <td>
+                                        <content>85</content>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <organizer classCode="CLUSTER" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.45" />
+                            <id root="24F02829-1607-427B-8DC5-B9DD0A44C475" />
+                            <statusCode code="completed" />
+                            <subject typeCode="SBJ" contextControlCode="OP">
+                                <relatedSubject classCode="PRS">
+                                    <code code="SIS" codeSystem="2.16.840.1.113883.5.111" codeSystemName="FamilyRelationshipRoleType" displayName="Sister">
+                                        <originalText representation="TXT" mediaType="text/plain" language="en-US">Sister</originalText>
+                                    </code>
+                                </relatedSubject>
+                            </subject>
+                            <component contextConductionInd="true">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.46" />
+                                    <id root="119B0687-3316-49D3-83F6-82E56892DB03" />
+                                    <code code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Condition" />
+                                    <statusCode code="completed" />
+                                    <value xsi:type="CD" code="533.90" codeSystem="2.16.840.1.113883.6.104" codeSystemName="ICD9" displayName="Ulcers">
+                                        <originalText representation="TXT" mediaType="text/plain" language="en-US">Ulcers</originalText>
+                                    </value>
+                                    <entryRelationship typeCode="SUBJ" inversionInd="true" contextConductionInd="true">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.6.96" />
+                                            <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Age At Onset" />
+                                            <statusCode code="completed" />
+                                            <value xsi:type="PQ" unit="a" value="98" />
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </component>
+                        </organizer>
+                    </entry>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <organizer classCode="CLUSTER" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.45" />
+                            <id root="E130C3DC-C4BE-4715-80D1-07A19FD85066" />
+                            <statusCode code="completed" />
+                            <subject typeCode="SBJ" contextControlCode="OP">
+                                <relatedSubject classCode="PRS">
+                                    <code code="GRFTH" codeSystem="2.16.840.1.113883.5.111" codeSystemName="FamilyRelationshipRoleType" displayName="Grandfather">
+                                        <originalText representation="TXT" mediaType="text/plain" language="en-US">Grandfather</originalText>
+                                    </code>
+                                </relatedSubject>
+                            </subject>
+                            <component contextConductionInd="true">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.46" />
+                                    <id root="9FBDA803-4612-4A37-880F-B1E1B373F0B0" />
+                                    <code code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Condition" />
+                                    <statusCode code="completed" />
+                                    <value xsi:type="CD" code="346.90" codeSystem="2.16.840.1.113883.6.104" codeSystemName="ICD9" displayName="Migraine Headaches">
+                                        <originalText representation="TXT" mediaType="text/plain" language="en-US">Migraine Headaches</originalText>
+                                    </value>
+                                    <entryRelationship typeCode="SUBJ" inversionInd="true" contextConductionInd="true">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.6.96" />
+                                            <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Age At Onset" />
+                                            <statusCode code="completed" />
+                                            <value xsi:type="PQ" unit="a" value="85" />
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </component>
+                        </organizer>
+                    </entry>
+                </section>
+            </component>
+            <component typeCode="COMP" contextConductionInd="true">
+                <section classCode="DOCSECT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.2.2.1" />
+                    <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations" />
+                    <title mediaType="text/plain" representation="TXT">IMMUNIZATIONS</title>
+                    <text mediaType="text/x-hl7-text+xml" language="en-US">
+                        <table width="100%" border="1">
+                            <thead>
+                                <tr>
+                                    <th>Vaccine</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">
+                                        <content ID="Immunization-0">No vaccine data is available</content>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="true">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.52" />
+                            <id nullFlavor="NI" />
+                            <text representation="TXT">
+                                <reference value="#Immunization-0" />
+                            </text>
+                            <statusCode code="completed" />
+                            <effectiveTime xsi:type="IVL_TS">
+                                <low nullFlavor="UNK" />
+                                <high value="201001131400-0500" />
+                            </effectiveTime>
+                            <consumable typeCode="CSM">
+                                <manufacturedProduct classCode="MANU">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.54" />
+                                    <manufacturedMaterial classCode="MMAT">
+                                        <code nullFlavor="OTH">
+                                            <originalText mediaType="text/x-hl7-text+xml">
+                                                <reference value="#Immunization-0" />
+                                            </originalText>
+                                            <translation code="33879002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Administration of vaccine to produce active immunity (procedure)">
+                                                <originalText representation="TXT">
+                                                    <reference value="#Immunization-0" />
+                                                </originalText>
+                                            </translation>
+                                        </code>
+                                    </manufacturedMaterial>
+                                </manufacturedProduct>
+                            </consumable>
+                        </substanceAdministration>
+                    </entry>
+                </section>
+            </component>
+            <component typeCode="COMP" contextConductionInd="true">
+                <section classCode="DOCSECT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.2.1.1" />
+                    <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF MEDICATION USE" />
+                    <title mediaType="text/plain" representation="TXT" language="en-US">MEDICATIONS</title>
+                    <text mediaType="text/x-hl7-text+xml" language="en-US">
+                        <table width="100%" border="1">
+                            <thead>
+                                <tr>
+                                    <th>Medication</th>
+                                    <th>Date</th>
+                                    <th>Instructions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <content>protamine sulfate</content>
+                                    </td>
+                                    <td>
+                                        <content>2005-03-31T08:03:00Z</content>
+                                    </td>
+                                    <td>
+                                        <content ID="Sig-1">/90 units of heparin overdosage</content>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content>OMS 50</content>
+                                    </td>
+                                    <td>
+                                        <content>2005-08-15T01:00:00Z</content>
+                                    </td>
+                                    <td>
+                                        <content ID="Sig-2">via nasal cannula (contin)</content>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content>protamine sulfate</content>
+                                    </td>
+                                    <td>
+                                        <content>2007-10-13T02:24:00Z</content>
+                                    </td>
+                                    <td>
+                                        <content ID="Sig-3">/90 units of heparin overdosage</content>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content>OMS 50</content>
+                                    </td>
+                                    <td>
+                                        <content>2007-10-19T22:16:00Z</content>
+                                    </td>
+                                    <td>
+                                        <content ID="Sig-4">via nasal cannula (contin)</content>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <substanceAdministration classCode="SBADM" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+                            <id root="5FF5A57F-6054-4177-8AEC-5D7AA9D5BE3E" />
+                            <text representation="TXT">
+                                <reference value="#Sig-1" />
+                            </text>
+                            <statusCode code="active" />
+                            <effectiveTime xsi:type="IVL_TS">
+                                <low value="20050331" />
+                                <high nullFlavor="UNK" />
+                            </effectiveTime>
+                            <doseQuantity unit="mg" value="1" />
+                            <consumable typeCode="CSM">
+                                <manufacturedProduct classCode="MANU">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                                    <manufacturedMaterial classCode="MMAT">
+                                        <code code="63323-229-30" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" displayName="protamine sulfate">
+                                            <originalText representation="TXT" mediaType="text/plain" language="en-US">protamine sulfate</originalText>
+                                        </code>
+                                    </manufacturedMaterial>
+                                </manufacturedProduct>
+                            </consumable>
+                            <entryRelationship typeCode="REFR" inversionInd="true" contextConductionInd="true">
+                                <supply classCode="SPLY" moodCode="INT">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.17" />
+                                    <id root="2.16.840.1.113883.4.450" extension="050324-70038" />
+                                    <statusCode code="completed" />
+                                    <effectiveTime xsi:type="IVL_TS">
+                                        <low value="200503241200-0500" />
+                                        <high nullFlavor="UNK" />
+                                    </effectiveTime>
+                                    <repeatNumber value="0" />
+                                    <quantity value="1" />
+                                    <product typeCode="PRD">
+                                        <manufacturedProduct classCode="MANU">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                                            <manufacturedMaterial classCode="MMAT">
+                                                <code code="63323-229-30" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" displayName="protamine sulfate">
+                                                    <originalText representation="TXT" mediaType="text/plain" language="en-US">protamine sulfate</originalText>
+                                                </code>
+                                            </manufacturedMaterial>
+                                        </manufacturedProduct>
+                                    </product>
+                                    <author typeCode="AUT" contextControlCode="OP">
+                                        <time value="200503241200-0500" />
+                                        <assignedAuthor classCode="ASSIGNED">
+                                            <id root="2.16.840.1.113883.4.6" extension="1789029723" />
+                                            <addr use="WP">
+                                                <streetAddressLine partType="SAL">1079 Vail Drive</streetAddressLine>
+                                                <city partType="CTY">Fairburn</city>
+                                                <state partType="STA">GA</state>
+                                                <postalCode partType="ZIP">30213</postalCode>
+                                                <country partType="CNT">US</country>
+                                            </addr>
+                                            <telecom value="tel:+1-616-359-1654" use="WP" />
+                                            <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                                                <name use="L">Dr.<given partType="GIV">Nicholas</given><family partType="FAM">Roach</family><suffix partType="SFX">Dr.</suffix></name>
+                                            </assignedPerson>
+                                        </assignedAuthor>
+                                    </author>
+                                </supply>
+                            </entryRelationship>
+                            <entryRelationship typeCode="REFR" inversionInd="true" contextConductionInd="true">
+                                <supply classCode="SPLY" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.18" />
+                                    <id root="2.16.840.1.113883.4.450" extension="RX18140856" />
+                                    <statusCode code="completed" />
+                                    <effectiveTime xsi:type="IVL_TS" value="200503310303-0500" />
+                                    <repeatNumber value="0" />
+                                    <quantity value="1" />
+                                    <product typeCode="PRD">
+                                        <manufacturedProduct classCode="MANU">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                                            <manufacturedMaterial classCode="MMAT">
+                                                <code code="63323-229-30" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" displayName="protamine sulfate">
+                                                    <originalText representation="TXT" mediaType="text/plain" language="en-US">protamine sulfate</originalText>
+                                                </code>
+                                            </manufacturedMaterial>
+                                        </manufacturedProduct>
+                                    </product>
+                                    <performer typeCode="PRF">
+                                        <assignedEntity classCode="ASSIGNED">
+                                            <id root="2.16.840.1.113883.19.5.9999.456" extension="1789029723" />
+                                            <addr use="WP">
+                                                <streetAddressLine partType="SAL">7133 Success Drive</streetAddressLine>
+                                                <city partType="CTY">Atlanta</city>
+                                                <state partType="STA">GA</state>
+                                                <postalCode partType="ZIP">30361</postalCode>
+                                                <country partType="CNT">US</country>
+                                            </addr>
+                                            <telecom value="tel:+1-607-389-3214" use="WP" />
+                                            <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                                                <name use="L">
+                                                    <given partType="GIV">Eliana</given>
+                                                    <family partType="FAM">Norton</family>
+                                                    <suffix partType="SFX">RPh</suffix>
+                                                </name>
+                                            </assignedPerson>
+                                            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                                                <id root="2.16.840.1.113883.4.450" extension="426881524" />
+                                                <name>CVS</name>
+                                                <telecom value="tel:+1-607-389-3214" use="WP" />
+                                                <addr use="WP">
+                                                    <streetAddressLine partType="SAL">7133 Success Drive</streetAddressLine>
+                                                    <city partType="CTY">Atlanta</city>
+                                                    <state partType="STA">GA</state>
+                                                    <postalCode partType="ZIP">30361</postalCode>
+                                                    <country partType="CNT">US</country>
+                                                </addr>
+                                            </representedOrganization>
+                                        </assignedEntity>
+                                    </performer>
+                                </supply>
+                            </entryRelationship>
+                        </substanceAdministration>
+                    </entry>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <substanceAdministration classCode="SBADM" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+                            <id root="06726FDE-2AFC-456D-856A-9E836B95EA7A" />
+                            <text representation="TXT">
+                                <reference value="#Sig-2" />
+                            </text>
+                            <statusCode code="active" />
+                            <effectiveTime xsi:type="IVL_TS">
+                                <low value="20050814" />
+                                <high nullFlavor="UNK" />
+                            </effectiveTime>
+                            <doseQuantity unit="h" value="6" />
+                            <consumable typeCode="CSM">
+                                <manufacturedProduct classCode="MANU">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                                    <manufacturedMaterial classCode="MMAT">
+                                        <code code="65689-001-21" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" displayName="OMS 50">
+                                            <originalText representation="TXT" mediaType="text/plain" language="en-US">OMS 50</originalText>
+                                        </code>
+                                    </manufacturedMaterial>
+                                </manufacturedProduct>
+                            </consumable>
+                            <entryRelationship typeCode="REFR" inversionInd="true" contextConductionInd="true">
+                                <supply classCode="SPLY" moodCode="INT">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.17" />
+                                    <id root="2.16.840.1.113883.4.450" extension="050815-73869" />
+                                    <statusCode code="completed" />
+                                    <effectiveTime xsi:type="IVL_TS">
+                                        <low value="200508142100-0400" />
+                                        <high nullFlavor="UNK" />
+                                    </effectiveTime>
+                                    <repeatNumber value="0" />
+                                    <quantity value="4320" />
+                                    <product typeCode="PRD">
+                                        <manufacturedProduct classCode="MANU">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                                            <manufacturedMaterial classCode="MMAT">
+                                                <code code="65689-001-21" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" displayName="OMS 50">
+                                                    <originalText representation="TXT" mediaType="text/plain" language="en-US">OMS 50</originalText>
+                                                </code>
+                                            </manufacturedMaterial>
+                                        </manufacturedProduct>
+                                    </product>
+                                    <author typeCode="AUT" contextControlCode="OP">
+                                        <time value="200508142100-0400" />
+                                        <assignedAuthor classCode="ASSIGNED">
+                                            <id root="2.16.840.1.113883.4.6" extension="1379318601" />
+                                            <addr use="WP">
+                                                <streetAddressLine partType="SAL">5058 Ingram Street</streetAddressLine>
+                                                <city partType="CTY">Atlanta</city>
+                                                <state partType="STA">GA</state>
+                                                <postalCode partType="ZIP">31193</postalCode>
+                                                <country partType="CNT">US</country>
+                                            </addr>
+                                            <telecom value="tel:+1-518-306-0325" use="WP" />
+                                            <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                                                <name use="L">
+                                                    <given partType="GIV">Forrest</given>
+                                                    <family partType="FAM">Wynn</family>
+                                                </name>
+                                            </assignedPerson>
+                                        </assignedAuthor>
+                                    </author>
+                                </supply>
+                            </entryRelationship>
+                            <entryRelationship typeCode="REFR" inversionInd="true" contextConductionInd="true">
+                                <supply classCode="SPLY" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.18" />
+                                    <id root="2.16.840.1.113883.4.450" extension="RX41725134" />
+                                    <statusCode code="completed" />
+                                    <effectiveTime xsi:type="IVL_TS" value="200508142100-0400" />
+                                    <repeatNumber value="0" />
+                                    <quantity value="4320" />
+                                    <product typeCode="PRD">
+                                        <manufacturedProduct classCode="MANU">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                                            <manufacturedMaterial classCode="MMAT">
+                                                <code code="65689-001-21" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" displayName="OMS 50">
+                                                    <originalText representation="TXT" mediaType="text/plain" language="en-US">OMS 50</originalText>
+                                                </code>
+                                            </manufacturedMaterial>
+                                        </manufacturedProduct>
+                                    </product>
+                                    <performer typeCode="PRF">
+                                        <assignedEntity classCode="ASSIGNED">
+                                            <id root="2.16.840.1.113883.19.5.9999.456" extension="1379318601" />
+                                            <addr use="WP">
+                                                <streetAddressLine partType="SAL">5058 Ingram Street</streetAddressLine>
+                                                <city partType="CTY">Atlanta</city>
+                                                <state partType="STA">GA</state>
+                                                <postalCode partType="ZIP">31193</postalCode>
+                                                <country partType="CNT">US</country>
+                                            </addr>
+                                            <telecom value="tel:+1-518-306-0325" use="WP" />
+                                            <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                                                <name use="L">
+                                                    <given partType="GIV">Forrest</given>
+                                                    <family partType="FAM">Wynn</family>
+                                                    <suffix partType="SFX">PA-C</suffix>
+                                                </name>
+                                            </assignedPerson>
+                                            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                                                <id root="2.16.840.1.113883.4.450" extension="965848463" />
+                                                <name>Extended Medical Services</name>
+                                                <telecom value="tel:+1-518-306-0325" use="WP" />
+                                                <addr use="WP">
+                                                    <streetAddressLine partType="SAL">5058 Ingram Street</streetAddressLine>
+                                                    <city partType="CTY">Atlanta</city>
+                                                    <state partType="STA">GA</state>
+                                                    <postalCode partType="ZIP">31193</postalCode>
+                                                    <country partType="CNT">US</country>
+                                                </addr>
+                                            </representedOrganization>
+                                        </assignedEntity>
+                                    </performer>
+                                </supply>
+                            </entryRelationship>
+                        </substanceAdministration>
+                    </entry>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <substanceAdministration classCode="SBADM" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+                            <id root="2A6B074B-25AD-4E2C-8FA9-3E6D682C8407" />
+                            <text representation="TXT">
+                                <reference value="#Sig-3" />
+                            </text>
+                            <statusCode code="active" />
+                            <effectiveTime xsi:type="IVL_TS">
+                                <low value="20071012" />
+                                <high nullFlavor="UNK" />
+                            </effectiveTime>
+                            <doseQuantity unit="mg" value="1" />
+                            <consumable typeCode="CSM">
+                                <manufacturedProduct classCode="MANU">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                                    <manufacturedMaterial classCode="MMAT">
+                                        <code code="63323-229-30" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" displayName="protamine sulfate">
+                                            <originalText representation="TXT" mediaType="text/plain" language="en-US">protamine sulfate</originalText>
+                                        </code>
+                                    </manufacturedMaterial>
+                                </manufacturedProduct>
+                            </consumable>
+                            <entryRelationship typeCode="REFR" inversionInd="true" contextConductionInd="true">
+                                <supply classCode="SPLY" moodCode="INT">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.17" />
+                                    <id root="2.16.840.1.113883.4.450" extension="071009-95251" />
+                                    <statusCode code="completed" />
+                                    <effectiveTime xsi:type="IVL_TS">
+                                        <low value="200710091100-0400" />
+                                        <high nullFlavor="UNK" />
+                                    </effectiveTime>
+                                    <repeatNumber value="0" />
+                                    <quantity value="1" />
+                                    <product typeCode="PRD">
+                                        <manufacturedProduct classCode="MANU">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                                            <manufacturedMaterial classCode="MMAT">
+                                                <code code="63323-229-30" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" displayName="protamine sulfate">
+                                                    <originalText representation="TXT" mediaType="text/plain" language="en-US">protamine sulfate</originalText>
+                                                </code>
+                                            </manufacturedMaterial>
+                                        </manufacturedProduct>
+                                    </product>
+                                    <author typeCode="AUT" contextControlCode="OP">
+                                        <time value="200710091100-0400" />
+                                        <assignedAuthor classCode="ASSIGNED">
+                                            <id root="2.16.840.1.113883.4.6" extension="2796641153" />
+                                            <addr use="WP">
+                                                <streetAddressLine partType="SAL">2519 Carlos Court</streetAddressLine>
+                                                <city partType="CTY">Atlanta</city>
+                                                <state partType="STA">GA</state>
+                                                <postalCode partType="ZIP">30303</postalCode>
+                                                <country partType="CNT">US</country>
+                                            </addr>
+                                            <telecom value="tel:+1-727-488-1798" use="WP" />
+                                            <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                                                <name use="L">
+                                                    <given partType="GIV">Jason</given>
+                                                    <family partType="FAM">Cantu</family>
+                                                </name>
+                                            </assignedPerson>
+                                        </assignedAuthor>
+                                    </author>
+                                </supply>
+                            </entryRelationship>
+                            <entryRelationship typeCode="REFR" inversionInd="true" contextConductionInd="true">
+                                <supply classCode="SPLY" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.18" />
+                                    <id root="2.16.840.1.113883.4.450" extension="RX12409196" />
+                                    <statusCode code="completed" />
+                                    <effectiveTime xsi:type="IVL_TS" value="200710122224-0400" />
+                                    <repeatNumber value="0" />
+                                    <quantity value="1" />
+                                    <product typeCode="PRD">
+                                        <manufacturedProduct classCode="MANU">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                                            <manufacturedMaterial classCode="MMAT">
+                                                <code code="63323-229-30" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" displayName="protamine sulfate">
+                                                    <originalText representation="TXT" mediaType="text/plain" language="en-US">protamine sulfate</originalText>
+                                                </code>
+                                            </manufacturedMaterial>
+                                        </manufacturedProduct>
+                                    </product>
+                                    <performer typeCode="PRF">
+                                        <assignedEntity classCode="ASSIGNED">
+                                            <id root="2.16.840.1.113883.19.5.9999.456" extension="2796641153" />
+                                            <addr use="WP">
+                                                <streetAddressLine partType="SAL">7133 Success Drive</streetAddressLine>
+                                                <city partType="CTY">Atlanta</city>
+                                                <state partType="STA">GA</state>
+                                                <postalCode partType="ZIP">30361</postalCode>
+                                                <country partType="CNT">US</country>
+                                            </addr>
+                                            <telecom value="tel:+1-607-389-3214" use="WP" />
+                                            <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                                                <name use="L">
+                                                    <given partType="GIV">Eliana</given>
+                                                    <family partType="FAM">Norton</family>
+                                                    <suffix partType="SFX">RPh</suffix>
+                                                </name>
+                                            </assignedPerson>
+                                            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                                                <id root="2.16.840.1.113883.4.450" extension="426881524" />
+                                                <name>CVS</name>
+                                                <telecom value="tel:+1-607-389-3214" use="WP" />
+                                                <addr use="WP">
+                                                    <streetAddressLine partType="SAL">7133 Success Drive</streetAddressLine>
+                                                    <city partType="CTY">Atlanta</city>
+                                                    <state partType="STA">GA</state>
+                                                    <postalCode partType="ZIP">30361</postalCode>
+                                                    <country partType="CNT">US</country>
+                                                </addr>
+                                            </representedOrganization>
+                                        </assignedEntity>
+                                    </performer>
+                                </supply>
+                            </entryRelationship>
+                        </substanceAdministration>
+                    </entry>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <substanceAdministration classCode="SBADM" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+                            <id root="B2CB2438-DC54-4FD4-85D4-1E4F866493F2" />
+                            <text representation="TXT">
+                                <reference value="#Sig-4" />
+                            </text>
+                            <statusCode code="active" />
+                            <effectiveTime xsi:type="IVL_TS">
+                                <low value="20071019" />
+                                <high nullFlavor="UNK" />
+                            </effectiveTime>
+                            <doseQuantity unit="h" value="6" />
+                            <consumable typeCode="CSM">
+                                <manufacturedProduct classCode="MANU">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                                    <manufacturedMaterial classCode="MMAT">
+                                        <code code="65689-001-21" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" displayName="OMS 50">
+                                            <originalText representation="TXT" mediaType="text/plain" language="en-US">OMS 50</originalText>
+                                        </code>
+                                    </manufacturedMaterial>
+                                </manufacturedProduct>
+                            </consumable>
+                            <entryRelationship typeCode="REFR" inversionInd="true" contextConductionInd="true">
+                                <supply classCode="SPLY" moodCode="INT">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.17" />
+                                    <id root="2.16.840.1.113883.4.450" extension="071019-87607" />
+                                    <statusCode code="completed" />
+                                    <effectiveTime xsi:type="IVL_TS">
+                                        <low value="200710191816-0400" />
+                                        <high nullFlavor="UNK" />
+                                    </effectiveTime>
+                                    <repeatNumber value="0" />
+                                    <quantity value="4320" />
+                                    <product typeCode="PRD">
+                                        <manufacturedProduct classCode="MANU">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                                            <manufacturedMaterial classCode="MMAT">
+                                                <code code="65689-001-21" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" displayName="OMS 50">
+                                                    <originalText representation="TXT" mediaType="text/plain" language="en-US">OMS 50</originalText>
+                                                </code>
+                                            </manufacturedMaterial>
+                                        </manufacturedProduct>
+                                    </product>
+                                    <author typeCode="AUT" contextControlCode="OP">
+                                        <time value="200710191816-0400" />
+                                        <assignedAuthor classCode="ASSIGNED">
+                                            <id root="2.16.840.1.113883.4.6" extension="1379318601" />
+                                            <addr use="WP">
+                                                <streetAddressLine partType="SAL">5058 Ingram Street</streetAddressLine>
+                                                <city partType="CTY">Atlanta</city>
+                                                <state partType="STA">GA</state>
+                                                <postalCode partType="ZIP">31193</postalCode>
+                                                <country partType="CNT">US</country>
+                                            </addr>
+                                            <telecom value="tel:+1-518-306-0325" use="WP" />
+                                            <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                                                <name use="L">
+                                                    <given partType="GIV">Forrest</given>
+                                                    <family partType="FAM">Wynn</family>
+                                                </name>
+                                            </assignedPerson>
+                                        </assignedAuthor>
+                                    </author>
+                                </supply>
+                            </entryRelationship>
+                            <entryRelationship typeCode="REFR" inversionInd="true" contextConductionInd="true">
+                                <supply classCode="SPLY" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.18" />
+                                    <id root="2.16.840.1.113883.4.450" extension="RX61993729" />
+                                    <statusCode code="completed" />
+                                    <effectiveTime xsi:type="IVL_TS" value="200710191816-0400" />
+                                    <repeatNumber value="0" />
+                                    <quantity value="4320" />
+                                    <product typeCode="PRD">
+                                        <manufacturedProduct classCode="MANU">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                                            <manufacturedMaterial classCode="MMAT">
+                                                <code code="65689-001-21" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" displayName="OMS 50">
+                                                    <originalText representation="TXT" mediaType="text/plain" language="en-US">OMS 50</originalText>
+                                                </code>
+                                            </manufacturedMaterial>
+                                        </manufacturedProduct>
+                                    </product>
+                                    <performer typeCode="PRF">
+                                        <assignedEntity classCode="ASSIGNED">
+                                            <id root="2.16.840.1.113883.19.5.9999.456" extension="1379318601" />
+                                            <addr use="WP">
+                                                <streetAddressLine partType="SAL">5058 Ingram Street</streetAddressLine>
+                                                <city partType="CTY">Atlanta</city>
+                                                <state partType="STA">GA</state>
+                                                <postalCode partType="ZIP">31193</postalCode>
+                                                <country partType="CNT">US</country>
+                                            </addr>
+                                            <telecom value="tel:+1-518-306-0325" use="WP" />
+                                            <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                                                <name use="L">
+                                                    <given partType="GIV">Forrest</given>
+                                                    <family partType="FAM">Wynn</family>
+                                                    <suffix partType="SFX">PA-C</suffix>
+                                                </name>
+                                            </assignedPerson>
+                                            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                                                <id root="2.16.840.1.113883.4.450" extension="965848463" />
+                                                <name>Extended Medical Services</name>
+                                                <telecom value="tel:+1-518-306-0325" use="WP" />
+                                                <addr use="WP">
+                                                    <streetAddressLine partType="SAL">5058 Ingram Street</streetAddressLine>
+                                                    <city partType="CTY">Atlanta</city>
+                                                    <state partType="STA">GA</state>
+                                                    <postalCode partType="ZIP">31193</postalCode>
+                                                    <country partType="CNT">US</country>
+                                                </addr>
+                                            </representedOrganization>
+                                        </assignedEntity>
+                                    </performer>
+                                </supply>
+                            </entryRelationship>
+                        </substanceAdministration>
+                    </entry>
+                </section>
+            </component>
+            <component typeCode="COMP" contextConductionInd="true">
+                <section classCode="DOCSECT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.2.10" />
+                    <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Plan of Care" />
+                    <title mediaType="text/plain" representation="TXT">PLAN OF CARE</title>
+                    <text mediaType="text/x-hl7-text+xml" language="en-US">
+                        <table width="100%" border="1">
+                            <thead>
+                                <tr>
+                                    <th>Planned Activity</th>
+                                    <th>Date Ordered</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <content ID="Plannedlab-1">CT Head</content>
+                                    </td>
+                                    <td>
+                                        <content>2010-01-13T19:00:00Z</content>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content ID="Plannedlab-2">ECG</content>
+                                    </td>
+                                    <td>
+                                        <content>2010-01-13T19:00:00Z</content>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content ID="Planneddrug-1">protamine sulfate - 1 mg</content>
+                                    </td>
+                                    <td>
+                                        <content>2010-01-13T19:00:00Z</content>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <observation classCode="OBS" moodCode="RQO">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.44" />
+                            <id root="8AC5A46C-0284-4D46-8046-CB1A6F8E2542" />
+                            <code code="24725-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CT Head">
+                                <originalText mediaType="text/x-hl7-text+xml">
+                                    <reference value="#Plannedlab-1" />
+                                </originalText>
+                            </code>
+                            <effectiveTime>
+                                <center value="201001131400-0500" />
+                            </effectiveTime>
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <observation classCode="OBS" moodCode="RQO">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.44" />
+                            <id root="5807567B-ADE8-48D3-8F40-B41622937708" />
+                            <code code="34534-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ECG">
+                                <originalText mediaType="text/x-hl7-text+xml">
+                                    <reference value="#Plannedlab-2" />
+                                </originalText>
+                            </code>
+                            <effectiveTime>
+                                <center value="201001131400-0500" />
+                            </effectiveTime>
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <substanceAdministration classCode="SBADM" moodCode="RQO">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.42" />
+                            <id root="7758B133-D646-4E2F-848A-1824CB8DA814" />
+                            <doseQuantity unit="mg" value="1" />
+                            <consumable typeCode="CSM">
+                                <manufacturedProduct classCode="MANU">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                                    <manufacturedMaterial classCode="MMAT">
+                                        <code code="63323-229-30" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC" displayName="protamine sulfate">
+                                            <originalText mediaType="text/x-hl7-text+xml">
+                                                <reference value="#Planneddrug-1" />
+                                            </originalText>
+                                        </code>
+                                    </manufacturedMaterial>
+                                </manufacturedProduct>
+                            </consumable>
+                        </substanceAdministration>
+                    </entry>
+                </section>
+            </component>
+            <component typeCode="COMP" contextConductionInd="true">
+                <section classCode="DOCSECT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.2.5.1" />
+                    <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PROBLEM LIST" />
+                    <title mediaType="text/plain" representation="TXT">PROBLEM LIST</title>
+                    <text mediaType="text/x-hl7-text+xml" language="en-US">
+                        <table width="100%" border="1">
+                            <thead>
+                                <tr>
+                                    <th>Problem</th>
+                                    <th>Status</th>
+                                    <th>Onset Date</th>
+                                    <th>Resolution Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <content ID="Problem-1">Chronic Obstructive Pulmonary Disease</content>
+                                    </td>
+                                    <td>
+                                        <content>Active</content>
+                                    </td>
+                                    <td>
+                                        <content>8/17/2000</content>
+                                    </td>
+                                    <td>
+                                        <content></content>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content ID="Problem-2">Hemorrhagic Stroke</content>
+                                    </td>
+                                    <td>
+                                        <content>Active</content>
+                                    </td>
+                                    <td>
+                                        <content>9/24/1994</content>
+                                    </td>
+                                    <td>
+                                        <content></content>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <act classCode="ACT" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.3" />
+                            <id root="5381BF2B-8D46-4718-8151-4B9829A50E8D" />
+                            <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern" />
+                            <statusCode code="active" />
+                            <effectiveTime>
+                                <low value="20000817" />
+                                <high />
+                            </effectiveTime>
+                            <entryRelationship typeCode="SUBJ" contextConductionInd="true">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                                    <id root="9DBAAF5D-3898-4275-8EB3-90ACA596E5A4" />
+                                    <code code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Condition" />
+                                    <text representation="TXT">
+                                        <reference value="#Problem-1" />
+                                    </text>
+                                    <statusCode code="completed" />
+                                    <effectiveTime>
+                                        <low value="20000817" />
+                                        <high />
+                                    </effectiveTime>
+                                    <value xsi:type="CD" code="496" codeSystem="2.16.840.1.113883.6.104" codeSystemName="ICD9" displayName="Chronic Obstructive Pulmonary Disease">
+                                        <originalText representation="TXT" mediaType="text/plain" language="en-US">Chronic Obstructive Pulmonary Disease</originalText>
+                                    </value>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <act classCode="ACT" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.3" />
+                            <id root="A78A4381-9DA2-4097-81D9-D30AC3CD514B" />
+                            <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern" />
+                            <statusCode code="active" />
+                            <effectiveTime>
+                                <low value="19940924" />
+                                <high />
+                            </effectiveTime>
+                            <entryRelationship typeCode="SUBJ" contextConductionInd="true">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                                    <id root="4282A485-6208-4A95-8B75-EA4752625B82" />
+                                    <code code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Condition" />
+                                    <text representation="TXT">
+                                        <reference value="#Problem-2" />
+                                    </text>
+                                    <statusCode code="completed" />
+                                    <effectiveTime>
+                                        <low value="19940924" />
+                                        <high />
+                                    </effectiveTime>
+                                    <value xsi:type="CD" code="431" codeSystem="2.16.840.1.113883.6.104" codeSystemName="ICD9" displayName="Hemorrhagic Stroke">
+                                        <originalText representation="TXT" mediaType="text/plain" language="en-US">Hemorrhagic Stroke</originalText>
+                                    </value>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                </section>
+            </component>
+            <component typeCode="COMP" contextConductionInd="true">
+                <section classCode="DOCSECT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.2.7.1" />
+                    <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PROCEDURES" />
+                    <title mediaType="text/plain" representation="TXT">PROCEDURES</title>
+                    <text mediaType="text/x-hl7-text+xml" language="en-US">
+                        <table width="100%" border="1">
+                            <thead>
+                                <tr>
+                                    <th>Procedure</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">
+                                        <content ID="Procedure-0">No Information About Procedures</content>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                </section>
+            </component>
+            <component typeCode="COMP" contextConductionInd="true">
+                <section classCode="DOCSECT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.2.22.1" />
+                    <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Encounters" />
+                    <title mediaType="text/plain" representation="TXT">ENCOUNTERS</title>
+                    <text mediaType="text/x-hl7-text+xml" language="en-US">
+                        <table width="100%" border="1">
+                            <thead>
+                                <tr>
+                                    <th>Summary</th>
+                                    <th>Date</th>
+                                    <th>Performer</th>
+                                    <th>Location</th>
+                                    <th>Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <content ID="Encounter-1">Alma visited primary care physician on 1/13/2010 1:30:00 PM for ChiefComplaint</content>
+                                    </td>
+                                    <td>
+                                        <content>2010-01-13T18:30:00Z</content>
+                                    </td>
+                                    <td>
+                                        <content>Nicholas Roach</content>
+                                    </td>
+                                    <td>
+                                        <content>Riverside Medical Associates</content>
+                                    </td>
+                                    <td>
+                                        <content>s:pt presents with 3 weeks history of Hemorrhagic Stroke. pt is a 35 YO white female. o:Height 170 cm, Weight 92.8 kg, Temperature 36.7 C, Pulse 80, SystolicBP 110, DiastolicBP 71, Respiration 17 a:Hemorrhagic Stroke p:performed E/M Level 3 (established patient) - Completed, and prescribed protamine sulfate - 1 mg /90 units of heparin overdosage, and ordered CT Head, ECG.</content>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <encounter classCode="ENC" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.49" />
+                            <id root="2.16.840.1.113883.4.450" extension="A0060453247021434647" />
+                            <code code="AMB" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActEncounterCode" displayName="Ambulatory">
+                                <originalText representation="TXT">
+                                    <reference value="#Encounter-1" />
+                                </originalText>
+                            </code>
+                            <statusCode code="completed" />
+                            <effectiveTime>
+                                <low value="201001131330-0500" />
+                                <high value="201001131400-0500" />
+                            </effectiveTime>
+                            <performer typeCode="PRF">
+                                <assignedEntity classCode="ASSIGNED">
+                                    <id root="2.16.840.1.113883.4.6" extension="1789029723" />
+                                    <addr use="WP">
+                                        <streetAddressLine partType="SAL">1079 Vail Drive</streetAddressLine>
+                                        <city partType="CTY">Fairburn</city>
+                                        <state partType="STA">GA</state>
+                                        <postalCode partType="ZIP">30213</postalCode>
+                                        <country partType="CNT">US</country>
+                                    </addr>
+                                    <telecom value="tel:+1-616-359-1654" use="WP" />
+                                    <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                                        <name use="L">
+                                            <given partType="GIV">Nicholas</given>
+                                            <family partType="FAM">Roach</family>
+                                            <suffix partType="SFX">MD</suffix>
+                                        </name>
+                                    </assignedPerson>
+                                </assignedEntity>
+                            </performer>
+                            <participant typeCode="LOC" contextControlCode="OP">
+                                <participantRole classCode="SDLOC">
+                                    <addr use="WP">
+                                        <streetAddressLine partType="SAL">1079 Vail Drive</streetAddressLine>
+                                        <city partType="CTY">Fairburn</city>
+                                        <state partType="STA">GA</state>
+                                        <postalCode partType="ZIP">30213</postalCode>
+                                        <country partType="CNT">US</country>
+                                    </addr>
+                                    <telecom value="tel:+1-616-359-1654" use="WP" />
+                                    <playingEntity classCode="PLC" determinerCode="INSTANCE">
+                                        <name>Riverside Medical Associates</name>
+                                    </playingEntity>
+                                </participantRole>
+                            </participant>
+                        </encounter>
+                    </entry>
+                </section>
+            </component>
+            <component typeCode="COMP" contextConductionInd="true">
+                <section classCode="DOCSECT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.2.3.1" />
+                    <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="RESULTS" />
+                    <title mediaType="text/plain" representation="TXT">RESULTS</title>
+                    <text mediaType="text/x-hl7-text+xml" language="en-US">
+                        <table width="100%" border="1">
+                            <thead>
+                                <tr>
+                                    <th>Test</th>
+                                    <th>Laboratory</th>
+                                    <th>Date Collected</th>
+                                    <th>Date Resulted</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4">
+                                        <content ID="Result-0">No result data is available</content>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <organizer classCode="CLUSTER" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.1" />
+                            <id root="55102FB0-E8BF-4ACE-8EF0-80FB70F1CCEE" />
+                            <code nullFlavor="NA" />
+                            <statusCode code="completed" />
+                            <component contextConductionInd="true">
+                                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                                    <id nullFlavor="NA" />
+                                    <code code="26436-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Laboratory Studies" />
+                                    <text representation="TXT">
+                                        <reference value="#Result-0" />
+                                    </text>
+                                    <statusCode code="completed" />
+                                    <effectiveTime value="201001131400-0500" />
+                                    <value xsi:type="CD" nullFlavor="NI" />
+                                </observation>
+                            </component>
+                        </organizer>
+                    </entry>
+                </section>
+            </component>
+            <component typeCode="COMP" contextConductionInd="true">
+                <section classCode="DOCSECT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.2.17" />
+                    <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" displayName="SOCIAL HISTORY" />
+                    <title mediaType="text/plain" representation="TXT">SOCIAL HISTORY</title>
+                    <text mediaType="text/x-hl7-text+xml" language="en-US">
+                        <table width="100%" border="1">
+                            <thead>
+                                <tr>
+                                    <th>Social History Element</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <content ID="SocialHistory-1">Alcohol Consumption</content>
+                                    </td>
+                                    <td>
+                                        <content>10-12 drinks per week</content>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <content ID="SocialHistory-2">Smoking Status</content>
+                                    </td>
+                                    <td>
+                                        <content>Never smoker (Never Smoked)</content>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.38" />
+                            <id root="00000000-0000-0000-0000-000000000000" />
+                            <code code="160573003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Alcohol intake" />
+                            <text representation="TXT">
+                                <reference value="#SocialHistory-1" />
+                            </text>
+                            <statusCode code="completed" />
+                            <effectiveTime>
+                                <low value="2010" />
+                            </effectiveTime>
+                            <value xsi:type="ST" mediaType="text/plain" representation="TXT">10-12 drinks per week</value>
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.78" />
+                            <id root="00000000-0000-0000-0000-000000000000" />
+                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                            <text representation="TXT">
+                                <reference value="#SocialHistory-2" />
+                            </text>
+                            <statusCode code="completed" />
+                            <effectiveTime>
+                                <low value="2010" />
+                            </effectiveTime>
+                            <value xsi:type="CD" code="266919005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Never smoker (Never Smoked)" />
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+            <component typeCode="COMP" contextConductionInd="true">
+                <section classCode="DOCSECT" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.20.22.2.4" />
+                    <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="VITAL SIGNS" />
+                    <title mediaType="text/plain" representation="TXT">VITAL SIGNS</title>
+                    <text mediaType="text/x-hl7-text+xml" language="en-US">
+                        <table width="100%" border="1">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Body height</th>
+                                    <th>Body weight</th>
+                                    <th>Respiration Rate</th>
+                                    <th>Heart Rate</th>
+                                    <th>Systolic BP</th>
+                                    <th>Diastolic BP</th>
+                                    <th>Temperature</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <content>2010-01-13T19:00:00Z</content>
+                                    </td>
+                                    <td>
+                                        <content ID="Vitals-1_1">170 cm</content>
+                                    </td>
+                                    <td>
+                                        <content ID="Vitals-1_2">92.8 kg</content>
+                                    </td>
+                                    <td>
+                                        <content ID="Vitals-1_3">17 /min</content>
+                                    </td>
+                                    <td>
+                                        <content ID="Vitals-1_4">80 /min</content>
+                                    </td>
+                                    <td>
+                                        <content ID="Vitals-1_5">110 mm[Hg]</content>
+                                    </td>
+                                    <td>
+                                        <content ID="Vitals-1_6">71 mm[Hg]</content>
+                                    </td>
+                                    <td>
+                                        <content ID="Vitals-1_7">36.7 Cel</content>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV" contextConductionInd="true">
+                        <organizer classCode="CLUSTER" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.26" />
+                            <id root="933B28A1-2772-4ACB-801A-71E906D6BE04" />
+                            <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Vital signs" />
+                            <statusCode code="completed" />
+                            <effectiveTime value="201001131400-0500" />
+                            <component contextConductionInd="true">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                                    <id root="FE4B7329-2CF9-45B6-8D27-DFDB25438AB8" />
+                                    <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Height">
+                                        <originalText representation="TXT" mediaType="text/plain" language="en-US">Height</originalText>
+                                    </code>
+                                    <text representation="TXT">
+                                        <reference value="#Vitals-1_1" />
+                                    </text>
+                                    <statusCode code="completed" />
+                                    <effectiveTime value="201001131400-0500" />
+                                    <value xsi:type="PQ" unit="cm" value="170" />
+                                </observation>
+                            </component>
+                            <component contextConductionInd="true">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                                    <id root="321677B1-8E10-4812-8692-804AE1CA716E" />
+                                    <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Weight Measured">
+                                        <originalText representation="TXT" mediaType="text/plain" language="en-US">Weight Measured</originalText>
+                                    </code>
+                                    <text representation="TXT">
+                                        <reference value="#Vitals-1_2" />
+                                    </text>
+                                    <statusCode code="completed" />
+                                    <effectiveTime value="201001131400-0500" />
+                                    <value xsi:type="PQ" unit="kg" value="92.8" />
+                                </observation>
+                            </component>
+                            <component contextConductionInd="true">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                                    <id root="CE939C04-8839-4F78-8679-AEA9ADA2471C" />
+                                    <code code="9279-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Respiratory Rate">
+                                        <originalText representation="TXT" mediaType="text/plain" language="en-US">Respiratory Rate</originalText>
+                                    </code>
+                                    <text representation="TXT">
+                                        <reference value="#Vitals-1_3" />
+                                    </text>
+                                    <statusCode code="completed" />
+                                    <effectiveTime value="201001131400-0500" />
+                                    <value xsi:type="PQ" unit="/min" value="17" />
+                                </observation>
+                            </component>
+                            <component contextConductionInd="true">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                                    <id root="010BD19C-43A3-45FE-8CF2-4222493F6B20" />
+                                    <code code="8867-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Heart Rate">
+                                        <originalText representation="TXT" mediaType="text/plain" language="en-US">Heart Rate</originalText>
+                                    </code>
+                                    <text representation="TXT">
+                                        <reference value="#Vitals-1_4" />
+                                    </text>
+                                    <statusCode code="completed" />
+                                    <effectiveTime value="201001131400-0500" />
+                                    <value xsi:type="PQ" unit="/min" value="80" />
+                                </observation>
+                            </component>
+                            <component contextConductionInd="true">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                                    <id root="0C4EDD45-3CB6-4F89-8EAB-9FCA0C293225" />
+                                    <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="BP Systolic">
+                                        <originalText representation="TXT" mediaType="text/plain" language="en-US">BP Systolic</originalText>
+                                    </code>
+                                    <text representation="TXT">
+                                        <reference value="#Vitals-1_5" />
+                                    </text>
+                                    <statusCode code="completed" />
+                                    <effectiveTime value="201001131400-0500" />
+                                    <value xsi:type="PQ" unit="mm[Hg]" value="110" />
+                                </observation>
+                            </component>
+                            <component contextConductionInd="true">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                                    <id root="764BA73B-3116-48FB-8FE5-0DFA64BA8954" />
+                                    <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="BP Diastolic">
+                                        <originalText representation="TXT" mediaType="text/plain" language="en-US">BP Diastolic</originalText>
+                                    </code>
+                                    <text representation="TXT">
+                                        <reference value="#Vitals-1_6" />
+                                    </text>
+                                    <statusCode code="completed" />
+                                    <effectiveTime value="201001131400-0500" />
+                                    <value xsi:type="PQ" unit="mm[Hg]" value="71" />
+                                </observation>
+                            </component>
+                            <component contextConductionInd="true">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                                    <id root="01429AF7-1723-4997-8F50-399DFDD120EB" />
+                                    <code code="8310-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body Temperature">
+                                        <originalText representation="TXT" mediaType="text/plain" language="en-US">Body Temperature</originalText>
+                                    </code>
+                                    <text representation="TXT">
+                                        <reference value="#Vitals-1_7" />
+                                    </text>
+                                    <statusCode code="completed" />
+                                    <effectiveTime value="201001131400-0500" />
+                                    <value xsi:type="PQ" unit="Cel" value="36.7" />
+                                </observation>
+                            </component>
+                        </organizer>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>
